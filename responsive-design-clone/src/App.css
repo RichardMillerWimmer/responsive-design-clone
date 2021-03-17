@@ -22,16 +22,20 @@ h1 {
 
 .headerContainer { 
   /* width: 100%; */
-  height: 13vh;
+  height: 70px;
   display: flex;
   align-content: space-between;
   background-color: rgb(250, 250, 250);
 }
 
+nav {
+  position: relative;
+
+}
 .navBtn {
-  width: 70px;
-  height: 30px;
-  margin-top: 20px;
+  width: 75px;
+  height: 35px;
+  margin-top: 17px;
   color: rgb(96, 161, 157);
   background-color: transparent;
   border: 1px solid rgb(96, 161, 157);
@@ -39,9 +43,12 @@ h1 {
 }
 .navBtn p {
   display: inline-block;
+  padding: 8px 6px;
+  /* padding-right: 4px; */
   color: rgb(96, 161, 157);
 }
 .burgerContainer {
+  /* padding-top: 8px; */
   display: inline-block;
 }
 
@@ -56,21 +63,42 @@ h1 {
 .hiddenMenu {
   display: none;
 }
+ ul {
+   position: absolute;
+   top: 70px;
+   left: 0px;
+   width: 100vw;
+   background-color: rgb(250, 250, 250);
+ }
+
+ li {
+   color: rgb(145, 145, 145);
+   padding: 10px 0 10px 20px;
+ }
 
 .hero {
   width: 100%;
   height: 90vh;
-  background-image: url('https://cdn.discordapp.com/attachments/806359418098548767/821842658996650005/bg-mountain.jpg');
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ), url('https://cdn.discordapp.com/attachments/806359418098548767/821842658996650005/bg-mountain.jpg');
   background-position: center top;
   background-size: cover;
   text-align: center;
+  /* filter: brightness(60%); */
 }
 
-heroContent
+.heroContent {
+  padding-top: 180px;
+}
 
 h2 {
   font-size: 3.8rem;
   color: rgb(250, 250, 250);
+  background-image: linear-gradient(0deg, rgb(160, 160, 160) 10%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -83,8 +111,17 @@ p {
   display: inline-block;
   width: 140px;
   padding: 20px;
+  margin-top: 50px ;
   background-color: rgb(96, 161, 157);
   border-radius: 3px;
   /* drop-shadow */
   color: rgb(250, 250, 250);
+}
+
+@media screen and (min-width: 980px) {
+
+}
+
+@media screen and (min-width: 1200) {
+
 }

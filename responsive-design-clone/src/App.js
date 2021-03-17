@@ -13,7 +13,7 @@ class App extends Component {
         <Header />
         <div className='hero'>
           <div className='heroContent'>
-            <h2>Grayscale</h2>
+            <h2>GRAYSCALE</h2>
             <p>A free, responsice, one page Bootstrap theme created by Start Bootstrap.</p>
             <a className='linkBtn'>Get Started</a>
           </div>
