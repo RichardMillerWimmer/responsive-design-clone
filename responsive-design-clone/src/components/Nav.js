@@ -5,19 +5,20 @@ class Nav extends Component {
     constructor() {
         super();
         this.state = {
-            menuDisplay: true
+            menuHidden: true
         }
     }
 
     menuToggle = () => {
-        // console.log(this.state.menuDisplay)
-        this.setState({ menuDisplay: !this.state.menuDisplay })
+        console.log(this.state.menuHidden)
+        this.setState({ menuHidden: !this.state.menuHidden })
     }
 
 
     render() {
+        console.log(this.state.menuHidden)
         return (
-            <nav className={this.state.menuDisplay ? 'hiddenMenu' : ''}>
+            <nav >
                 <div className='navContainer'>
                     <h1>Start Bootstrap</h1>
                     <div onClick={this.menuToggle} className='navBtn'>
@@ -29,11 +30,13 @@ class Nav extends Component {
                         </div>
                     </div>
                 </div>
-                <ul >
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                </ul>
+                <div className={this.state.menuHidden ? 'navBarDrop hiddenMenu' : 'navBarDrop'}>
+                    <ul >
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
             </nav>
         );
     }
