@@ -7,9 +7,8 @@ function Header() {
     return (
         <section className='headerContainer'>
             <header >
-                <h1>Start Bootstrap</h1>
+                <Nav />
             </header>
-            <Nav />
         </section>
     )
 }
